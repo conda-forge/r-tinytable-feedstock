@@ -1,4 +1,4 @@
-{% set version = '0.3.0' %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tinytable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tinytable/tinytable_{{ version }}.tar.gz
-  sha256: 58ffcb74f796e4972ca32908e1e38bbd01109df2972ab9791a691c4437517832
+  sha256: 80add18d8eb69fc69fffc3ce08e3c73d8581ea58e79ce84cc31a69439f2b990d
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -35,11 +35,8 @@ test:
 about:
   home: https://vincentarelbundock.github.io/tinytable/
   license: GPL-3.0-or-later
-  summary: Create highly customized tables with this simple and dependency-free package. Data
-    frames can be converted to 'HTML', 'LaTeX', 'Markdown', 'Word', 'PNG', 'PDF', or
-    'Typst' tables. The user interface is minimalist and easy to learn. The syntax is
-    concise. 'HTML' tables can be customized using the flexible 'Bootstrap' framework,
-    and 'LaTeX' code with the 'tabularray' package.
+  summary: Create highly customized tables with this simple and dependency-free package. Data frames can be converted to 'HTML', 'LaTeX', 'Markdown', 'Word', 'PNG', 'PDF', or 'Typst' tables. The user interface is minimalist and easy to learn. The syntax is concise. 'HTML' tables can be customized using the flexible 'Bootstrap'
+    framework, and 'LaTeX' code with the 'tabularray' package.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
