@@ -1,4 +1,4 @@
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tinytable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tinytable/tinytable_{{ version }}.tar.gz
-  sha256: 6ee1c5567653569ee0bdfebac1c9a4e344f23c2bdc786b66c39a55a25bd8b189
+  sha256: bae61a5310230b44a290a7a7486e8dfa73cacfc2f5f5e877eeaac43030d35789
 
 build:
   number: 0
